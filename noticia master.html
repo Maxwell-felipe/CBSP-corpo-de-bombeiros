@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notícia - CBSP</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #111;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .news-title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .news-meta {
+      font-size: 14px;
+      color: gray;
+      margin-bottom: 25px;
+    }
+
+    .news-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 25px;
+    }
+
+    .news-content {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #444;
+    }
+
+    @media (max-width: 768px) {
+      .news-title {
+        font-size: 24px;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      header nav {
+        margin-top: 10px;
+      }
+
+      .news-content {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <style>
+      header {
+        background-color: #b30000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        flex-wrap: wrap;
+      }
+  
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+  
+      .logo img {
+        height: 50px;
+        margin-right: 10px;
+      }
+  
+      .nav-links {
+        display: flex;
+        gap: 20px;
+      }
+  
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        transition: 0.3s ease;
+        position: relative;
+      }
+  
+      .nav-links a:hover {
+        color: #ffd700;
+        transform: scale(1.1);
+      }
+  
+      @media (max-width: 768px) {
+        .nav-links {
+          flex-direction: column;
+          width: 100%;
+          align-items: flex-start;
+          margin-top: 10px;
+        }
+  
+        .nav-links a {
+          padding: 5px 0;
+        }
+      }
+    </style>
+  
+    <div class="logo">
+      <img src="logo cbsp.png" alt="Logo CBSP">
+      <span style="color:white; font-weight:bold; font-size: 18px;">CBSP</span>
+    </div>
+  
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="sobre nos.html">Sobre Nós</a>
+      <a href="noticias.html">Notícias</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="news-title">Megaoperação em Fábrica Ilegal de Armas Termina com Troca de Tiros, Explosões e 17 Presos na Zona Oeste</h1>
+    <p class="news-meta">Publicado em 20/04/2025 - Por Comunicação CBSP</p>
+    <img src="incendio tomante.jpg" alt="Incêndio em galpão" class="news-image">
+    
+    <div class="news-content">
+      <p>
+        Uma megaoperação realizada na manhã deste sábado pelo Corpo de Bombeiros em conjunto com a Polícia Civil e o Exército Brasileiro desmantelou uma fábrica clandestina de armamentos pesados em um galpão industrial abandonado na região do Rio Pequeno, zona oeste de São Paulo. A ação contou com mais de 50 agentes e foi marcada por intensa troca de tiros, explosões e evacuação em massa de moradores da área.  
+      </p>
+      <p>
+        A investigação, que durava mais de quatro meses, identificou que o local era utilizado para fabricação ilegal de fuzis, granadas artesanais e munição de uso restrito. A quadrilha contava com especialistas em engenharia e até um químico responsável por criar explosivos de alto impacto. Quando as forças chegaram para cumprir os mandados de prisão, foram recebidas a tiros, resultando em um confronto que durou mais de uma hora.  
+      </p>
+      <p>
+        Durante o tiroteio, parte do galpão explodiu devido ao armazenamento impróprio de substâncias químicas e armamento. O Corpo de Bombeiros agiu rapidamente para conter o incêndio, impedindo que se espalhasse para as residências vizinhas. Três bombeiros ficaram feridos por estilhaços, mas nenhum em estado grave. Um dos suspeitos também sofreu queimaduras e está internado sob custódia.
+      </p>
+      <p>
+        Cerca de 17 pessoas foram presas, incluindo três estrangeiros com mandados de captura internacional. Foram apreendidas mais de 120 armas, além de 500 kg de explosivos, milhares de munições, coletes balísticos e documentos com anotações de possíveis alvos e rotas de contrabando. Autoridades acreditam que o material seria usado em ataques coordenados por facções criminosas. 
+      </p>
+      <p>
+        A área precisou ser isolada em um raio de 1 km e cerca de 200 moradores foram evacuados para escolas da região. Técnicos da Defesa Civil e do Exército fizeram varreduras para identificar a presença de minas, armadilhas ou material radioativo. Um drone com câmera térmica localizou um esconderijo subterrâneo usado como bunker pela quadrilha.
+      </p>
+      <p>
+        O governador do estado classificou a operação como uma das maiores já realizadas em solo urbano e elogiou a atuação dos bombeiros: "O trabalho técnico e corajoso da corporação evitou uma tragédia de proporções catastróficas", declarou. O prefeito também decretou estado de atenção no bairro e reforço no patrulhamento por tempo indeterminado.
+      </p>
+<p>
+  Equipes de investigação ainda trabalham no local em busca de evidências e pistas sobre outros galpões ligados ao esquema. A expectativa é que novas prisões ocorram nos próximos dias, incluindo suspeitos ligados a milícias e facções do Norte do país. A operação foi batizada de “Chama Silenciosa”, em referência ao trabalho de inteligência dos bombeiros.
+</p>
+<p>
+  A população local segue assustada com a grandiosidade do caso. Uma moradora relatou que "nunca imaginou viver algo assim no próprio bairro". Já os bombeiros que atuaram na linha de frente disseram que foi uma das ocorrências mais perigosas dos últimos anos, exigindo coordenação impecável e sangue frio em meio ao caos.
+</p>
+
+    </div>
+  </main>
+
+</body>
+</html>

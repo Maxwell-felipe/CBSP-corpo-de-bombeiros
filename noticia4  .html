@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notícia - CBSP</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #111;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .news-title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .news-meta {
+      font-size: 14px;
+      color: gray;
+      margin-bottom: 25px;
+    }
+
+    .news-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 25px;
+    }
+
+    .news-content {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #444;
+    }
+
+    @media (max-width: 768px) {
+      .news-title {
+        font-size: 24px;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      header nav {
+        margin-top: 10px;
+      }
+
+      .news-content {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <style>
+      header {
+        background-color: #b30000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        flex-wrap: wrap;
+      }
+  
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+  
+      .logo img {
+        height: 50px;
+        margin-right: 10px;
+      }
+  
+      .nav-links {
+        display: flex;
+        gap: 20px;
+      }
+  
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        transition: 0.3s ease;
+        position: relative;
+      }
+  
+      .nav-links a:hover {
+        color: #ffd700;
+        transform: scale(1.1);
+      }
+  
+      @media (max-width: 768px) {
+        .nav-links {
+          flex-direction: column;
+          width: 100%;
+          align-items: flex-start;
+          margin-top: 10px;
+        }
+  
+        .nav-links a {
+          padding: 5px 0;
+        }
+      }
+    </style>
+  
+    <div class="logo">
+      <img src="logo cbsp.png" alt="Logo CBSP">
+      <span style="color:white; font-weight:bold; font-size: 18px;">CBSP</span>
+    </div>
+  
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="sobre nos.html">Sobre Nós</a>
+      <a href="noticias.html">Notícias</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="news-title">Caminhão-Tanque Explode no Rodoanel e Alerta é Emitido para Região</h1>
+    <p class="news-meta">Publicado em 19/04/2025 - Por Comunicação CBSP</p>
+    <img src="vtrs rdv noite.jpg" alt="Incêndio em galpão" class="news-image">
+    
+    <div class="news-content">
+      <p>
+        Na madrugada desta sexta-feira, um caminhão-tanque carregado com combustível explodiu após tombar no trecho sul do Rodoanel Mário Covas. O motorista do veículo não resistiu aos ferimentos, e outras duas pessoas ficaram feridas. A explosão foi ouvida em diversos bairros próximos.
+      </p>
+      <p>
+        Equipes especializadas do Corpo de Bombeiros atuaram por mais de 6 horas para conter as chamas e impedir que o fogo se espalhasse para áreas de mata próximas. O local foi isolado em um raio de 300 metros por medida de segurança. A Cetesb foi acionada para avaliar os riscos ambientais e a contaminação do solo.
+      </p>
+      <p>
+        As causas do acidente ainda estão sendo apuradas, mas há indícios de que o caminhão estava em excesso de velocidade e com os pneus desgastados. A Defesa Civil e a Cetesb acompanham a situação, monitorando possíveis impactos ambientais devido ao derramamento de combustível.
+      </p>
+      <p>
+        A rodovia foi liberada parcialmente por volta das 10h, mas o tráfego ainda é lento na região. O caso acende novamente o alerta sobre a necessidade de fiscalização mais rígida do transporte de cargas perigosas nas vias urbanas e rodovias.
+      </p>
+      
+    </div>
+  </main>
+
+</body>
+</html>

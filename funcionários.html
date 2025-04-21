@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel do Funcionário - CBSP</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #b30000;
+      padding: 10px 20px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 50px;
+    }
+    .container {
+      margin-top: 20px;
+    }
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: #b30000;
+    }
+    table {
+      background-color: white;
+    }
+    .user-info {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    .table th {
+      background-color: #b30000;
+      color: white;
+    }
+  </style>
+</head>
+<body onload="exibirNome()">
+  <header>
+    <div>
+      <img src="logo CBSP.png" alt="Logo CBSP"> <h1>CBSP</h1>
+    </div>
+    <nav>
+      <!-- Links do menu -->
+      <a href="index.html" class="text-white mx-2">Home</a>
+      <a href="r" class="text-white mx-2">Ocorrências</a>
+      <a href="#" class="text-white mx-2">Escala</a>
+      <a href="#" class="text-white mx-2">Pagamentos</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="user-info text-center">
+      <h3>Bem-vindo, <span id="nomeUsuario"></span></h3>
+      <p>3º Batalhão - Companhia do Butantã</p>
+    </div>
+
+    
+          <!-- ocorrências  -->
+         
+              <style>
+                  * {
+                      margin: 0;
+                      padding: 0;
+                      box-sizing: border-box;
+                      font-family: Arial, sans-serif;
+                  }
+          
+                  body {
+                      background-color: #f4f4f4;
+                      margin: 0;
+                      padding: 0;
+                  }
+          
+                  header {
+                      background-color: #333;
+                      color: white;
+                      padding: 15px;
+                      text-align: center;
+                  }
+          
+                  header h1 {
+                      margin-bottom: 5px;
+                  }
+          
+                  header p {
+                      font-size: 16px;
+                  }
+          
+                  section {
+                      padding: 20px;
+                  }
+          
+                  h2 {
+                      margin-bottom: 20px;
+                      color: #333;
+                  }
+          
+                  table {
+                      width: 100%;
+                      border-collapse: collapse;
+                      margin-bottom: 30px;
+                  }
+          
+                  th, td {
+                      padding: 12px;
+                      text-align: center;
+                      border: 1px solid #ddd;
+                  }
+          
+                  th {
+                      background-color: #333;
+                      color: white;
+                  }
+          
+                  td {
+                      background-color: #f9f9f9;
+                  }
+          
+                  tr:nth-child(even) td {
+                      background-color: #f1f1f1;
+                  }
+          
+                  tr:hover {
+                      background-color: #f1f1f1;
+                  }
+              </style>
+         
+          
+          <section>
+              <h2>Ocorrências comandadas</h2>
+              <table>
+                  <thead>
+                      <tr>
+                          <th>Data</th>
+                          <th>Tipo de Ocorrência</th>
+                          <th>Local</th>
+                          <th>Status</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>01/05/2025</td>
+                          <td>Incêndio</td>
+                          <td>Rua geraldo viana - Bairro Butantã</td>
+                          <td>Finalizado</td>
+                      </tr>
+                      <tr>
+                          <td>02/05/2025</td>
+                          <td>Acidente de Trânsito</td>
+                          <td>Av. Paulista</td>
+                          <td>Finalizado</td>
+                      </tr>
+                      <tr>
+                          <td>03/05/2025</td>
+                          <td>Desabamento</td>
+                          <td>Rua brasilandia - Bairro Butantã</td>
+                          <td>Finalizado</td>
+                      </tr>
+                      <tr>
+                          <td>04/05/2025</td>
+                          <td>Incêndio</td>
+                          <td>Rua cecilia meireles- Bairro Butantã</td>
+                          <td>Finalizado</td>
+                      </tr>
+                      <tr>
+                          <td>05/05/2025</td>
+                          <td>Acidente de Trabalho</td>
+                          <td>Rua Comendador gomes - Bairro pinheiros</td>
+                          <td>Finalizado</td>
+                      </tr>
+                      <tr>
+                          <td>06/05/2025</td>
+                          <td>Incêndio</td>
+                          <td>Rua Eustaquio goes- Bairro pinheiros</td>
+                          <td>Finalizado</td>
+                      </tr>
+                      <tr>
+                          <td>07/05/2025</td>
+                          <td>Acidente de Trânsito</td>
+                          <td>Rua das nações - Bairro Higienopolis</td>
+                          <td>Finalizado</td>
+                      </tr>
+                      <tr>
+                          <td>08/05/2025</td>
+                          <td>Desabamento</td>
+                          <td>Rua Ijiano tamoio - Bairro Butantã</td>
+                          <td>Finalizado</td>
+                      </tr>
+                      <tr>
+                          <td>09/05/2025</td>
+                          <td>Incêndio</td>
+                          <td>Rua Kleber- Bairro pinheiros</td>
+                          <td>Finalizado</td>
+                      </tr>
+                      <tr>
+                          <td>10/05/2025</td>
+                          <td> tentativa de suicidio</td>
+                          <td>Rua Munique julho - Bairro Butantã</td>
+                          <td>Finalizado</td>
+                      </tr>
+                      <tr>
+                          <td>11/05/2025</td>
+                          <td>Incêndio</td>
+                          <td>Rua Oscar freire - Bairro pinheiros</td>
+                          <td>Finalizado</td>
+                      </tr>
+                      <tr>
+                          <td>12/05/2025</td>
+                          <td>Acidente de Trânsito</td>
+                          <td>avenida tyson  - Bairro Butantã</td>
+                          <td>Finalizado</td>
+                      </tr>
+                      <tr>
+                          <td>13/05/2025</td>
+                          <td>cadaver encontrado</td>
+                          <td>Rua Sorte soturna - Bairro sé</td>
+                          <td>Finalizado</td>
+                      </tr>
+                      <tr>
+                          <td>14/05/2025</td>
+                          <td>enchente</td>
+                          <td>Rua Ulisses guimarães - Bairro Vila carrão</td>
+                          <td>Finalizado</td>
+                      </tr>
+                      <tr>
+                          <td>15/05/2025</td>
+                          <td>Acidente de Trabalho</td>
+                          <td>Rua Wesley safadão - Bairro pinheiros</td>
+                          <td>Finalizado</td>
+                      </tr>
+                      <tr>
+                          <td>16/05/2025</td>
+                          <td>atropelamento</td>
+                          <td>Rua Yasmin rocha - Bairro Butantã</td>
+                          <td>Finalizado</td>
+                      </tr>
+                      <tr>
+                          <td>17/05/2025</td>
+                          <td>explosão</td>
+                          <td>Rua Alves da penha - Bairro Butantã</td>
+                          <td>finalizado</td>
+                      </tr>
+                      <tr>
+                          <td>18/05/2025</td>
+                          <td>Desabamento</td>
+                          <td>Rua Cimed - Bairro sé</td>
+                          <td>Finalizado</td>
+                      </tr>
+                      <tr>
+                          <td>19/05/2025</td>
+                          <td>Incêndio</td>
+                          <td>Rua Estaquio pontifice - Bairro Ferraz de vaz</td>
+                          <td>Finalizado</td>
+                      </tr>
+                      <tr>
+                          <td>20/05/2025</td>
+                          <td>tomada de refem</td>
+                          <td>Rua General maxwell - Bairro Higienopolis</td>
+                          <td>finalizado</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </section>
+          
+          <script>
+              // Aqui vamos pegar o nome do usuário que foi definido durante o login
+              const nomeUsuario = "Felipe Maxwell"; // Aqui você substitui pelo nome real do usuário
+              document.getElementById("nome-usuario").textContent = nomeUsuario;
+          </script>
+          
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Folha Anual de Pagamento e Bonificações</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Mês</th>
+            <th>Salário Base (R$)</th>
+            <th>Bonificação (R$)</th>
+            <th>Total (R$)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Janeiro</td><td>9700</td><td>800</td><td>10.500</td></tr>
+          <tr><td>Fevereiro</td><td>9700</td><td>500</td><td>10.200</td></tr>
+          <tr><td>Março</td><td>9700</td><td>600</td><td>10.300</td></tr>
+          <tr><td>abril</td><td>9700</td><td>300</td><td>10.000</td></tr>
+          <tr><td>maio</td><td>9700</td><td>000</td><td>9.700</td></tr>
+          <tr><td>junho</td><td>9700</td><td>600</td><td>10.300</td></tr>
+          <tr><td>julho</td><td>9700</td><td>1000</td><td>10.700</td></tr>
+          <tr><td>agosto</td><td>9700</td><td>2000</td><td>11.700</td></tr>
+          <tr><td>setembro</td><td>9700</td><td>600</td><td>10.300</td></tr>
+          <tr><td>outubro</td><td>9700</td><td>800</td><td>10.500</td></tr>
+          <tr><td>novembro</td><td>9700</td><td>1000</td><td>10.700</td></tr>
+          <tr><td>dezembro</td><td>9700</td><td>9700</td><td>19.400</td></tr>
+
+          <!-- ... fim folha de pagamento ... -->
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Escala de Plantão - Maio</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Plantão</th>
+            <th>Folga</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>01/05</td><td>Sim</td><td>Não</td></tr>
+          <tr><td>02/05</td><td>Não</td><td>Sim</td></tr>
+          <tr><td>03/05</td><td>Sim</td><td>Não</td></tr>
+          <tr><td>04/05</td><td>Sim</td><td>Não</td></tr>
+          <tr><td>05/05</td><td>Não</td><td>Sim</td></tr>
+          <tr><td>06/05</td><td>Sim</td><td>Não</td></tr>
+          <tr><td>07/05</td><td>Sim</td><td>Não</td></tr>
+          <tr><td>08/05</td><td>Não</td><td>Sim</td></tr>
+          <tr><td>09/05</td><td>Sim</td><td>Não</td></tr>
+          <tr><td>10/05</td><td>Sim</td><td>Não</td></tr>
+          <tr><td>11/05</td><td>Não</td><td>Sim</td></tr>
+          <tr><td>12/05</td><td>Sim</td><td>Não</td></tr>
+          <!-- ... preencher os 31 dias ... -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    function exibirNome() {
+      const nome = localStorage.getItem('nomeUsuario') || 'Usuário';
+      document.getElementById('nomeUsuario').textContent = nome;
+    }
+  </script>
+</body>
+</html>

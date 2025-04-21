@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notícia - CBSP</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #111;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .news-title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .news-meta {
+      font-size: 14px;
+      color: gray;
+      margin-bottom: 25px;
+    }
+
+    .news-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 25px;
+    }
+
+    .news-content {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #444;
+    }
+
+    @media (max-width: 768px) {
+      .news-title {
+        font-size: 24px;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      header nav {
+        margin-top: 10px;
+      }
+
+      .news-content {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <style>
+      header {
+        background-color: #b30000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        flex-wrap: wrap;
+      }
+  
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+  
+      .logo img {
+        height: 50px;
+        margin-right: 10px;
+      }
+  
+      .nav-links {
+        display: flex;
+        gap: 20px;
+      }
+  
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        transition: 0.3s ease;
+        position: relative;
+      }
+  
+      .nav-links a:hover {
+        color: #ffd700;
+        transform: scale(1.1);
+      }
+  
+      @media (max-width: 768px) {
+        .nav-links {
+          flex-direction: column;
+          width: 100%;
+          align-items: flex-start;
+          margin-top: 10px;
+        }
+  
+        .nav-links a {
+          padding: 5px 0;
+        }
+      }
+    </style>
+  
+    <div class="logo">
+      <img src="logo cbsp.png" alt="Logo CBSP">
+      <span style="color:white; font-weight:bold; font-size: 18px;">CBSP</span>
+    </div>
+  
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="sobre nos.html">Sobre Nós</a>
+      <a href="noticias.html">Notícias</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="news-title">Incêndio Criminoso Destrói Posto de Gasolina na Vila Carrão</h1>
+    <p class="news-meta">Publicado em 20/04/2025 - Por Comunicação CBSP</p>
+    <img src="lader fumaça.jpg" alt="Incêndio em galpão" class="news-image">
+    
+    <div class="news-content">
+      <p>
+        Um incêndio de grandes proporções destruiu completamente um posto de combustíveis localizado na Rua Evangelina, no bairro da Vila Carrão, zona leste de São Paulo, durante a madrugada deste sábado. O Corpo de Bombeiros foi acionado por volta das 3h20 e enviou 12 viaturas para combater as chamas, que consumiram rapidamente toda a estrutura do local.  
+      </p>
+      <p>
+        Testemunhas relataram ter visto dois indivíduos encapuzados jogando um líquido inflamável na área dos tanques, pouco antes das explosões. Câmeras de segurança da região já foram recolhidas pela Polícia Civil, que investiga o caso como incêndio criminoso. Não houve vítimas, mas os danos materiais foram avaliados em mais de R$ 1 milhão.
+      </p>
+      <p>
+        Os bombeiros conseguiram conter o fogo após quase duas horas de combate intenso. O risco de explosão de outros tanques exigiu o isolamento de três quarteirões e a evacuação de cerca de 30 moradores. Um funcionário do posto que estava no local no momento do ataque conseguiu escapar ileso pela lateral do terreno. 
+      </p>
+      <p>
+        O posto havia passado por uma reforma há apenas seis meses e funcionava 24 horas. A perícia já foi acionada e a polícia trabalha com a hipótese de vingança ou tentativa de extorsão. Os moradores da região estão assustados e cobram mais segurança, principalmente durante a madrugada.
+      </p>
+      
+    </div>
+  </main>
+
+</body>
+</html>
